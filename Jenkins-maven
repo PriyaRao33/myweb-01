@@ -19,7 +19,7 @@ pipeline{
         }
         stage("deploy-dev"){
             steps{
-                sshagent(['3f20bf17-65f1-4c03-bb12-9472e632a52c']) {
+                sshagent(['a5fc6bc7-55ff-4250-9501-2be0b0697d59']) {
                 sh """
                     scp -o StrictHostKeyChecking=no target/myweb-01.war  ec2-user@172.31.86.146:/home/ec2-user/apache-tomcat-9.0.68/webapps/
                     
