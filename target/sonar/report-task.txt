@@ -1,4 +1,4 @@
-projectKey=in.javahome:myweb
+projectKey=in.javahome:myweb-01
 serverUrl=http://52.87.238.33:9000
 serverVersion=7.7.0.23042
 dashboardUrl=http://52.87.238.33:9000/dashboard?id=in.javahome%3Amyweb
