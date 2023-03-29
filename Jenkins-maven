@@ -19,9 +19,9 @@ pipeline{
         }
         stage("deploy-dev"){
             steps{
-                sshagent(['8e77ea6e-4440-4f93-8339-f9eb32166791']) {
+                sshagent(['928650df-cb29-4ae3-b120-9cca70eeda59']) {
                 sh """
-                    scp -o StrictHostKeyChecking=no target/myweb-01.war  ec2-user@52.91.125.228:/home/ec2-user/apache-tomcat-9.0.71/webapps/
+                    scp -o StrictHostKeyChecking=no target/myweb-01.war  ec2-user@52.91.125.228:/home/ec2-user/apache-tomcat-9.0.73/webapps/
                     
                     ssh ec2-user@52.91.125.228 /home/ec2-user/apache-tomcat-9.0.73/bin/shutdown.sh
                     
