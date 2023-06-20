@@ -20,7 +20,7 @@ node{
    }
    
    stage('Deploy to Dev'){
-       sshagent(['tomcat-dev']) {
+       sshagent(['561bd450-fa47-4005-8a1c-0da2063ea753']) {
 	   def dockeRm = "ssh ec2-user@44.211.252.85 docker rm -f myweb"
 	   def dockeRun = "ssh ec2-user@44.211.252.85 docker run -d -p 80:8080 --name myweb kammana/myweb:5.0.0"
 	   sh "${dockeRm}"
